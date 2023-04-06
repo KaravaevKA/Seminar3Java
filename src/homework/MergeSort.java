@@ -35,7 +35,7 @@ public class MergeSort {
         }
         return thirdArray;
     }
-    private static int[] sort(int[] arrayX){
+    private static void sort(int[] arrayX){
         int buffer = 0;
         for (int j = 0; j < arrayX.length-1; j++) {
             if (arrayX[j] > arrayX[j+1]) {
@@ -44,6 +44,5 @@ public class MergeSort {
                 arrayX[j] = buffer;
             }
         }
-        return arrayX;
     }
 }
